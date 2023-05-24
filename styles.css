@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: pink;
+    color:rgb(109, 9, 72);
+    padding: 20px;
+}
+
+header h1 {
+         
+       
+        
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+.contact-info {
+    display: none;
+  }
+  
+  .show-info {
+    cursor: pointer;
+   
+    color: red;
+  }
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("https://t3.ftcdn.net/jpg/02/79/18/54/240_F_279185405_M3nM3kB3nwLud0CvsLEeiN2wAAy4IRtV.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    
+      
+
+    
+}
+    
+.hero h2 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Products Section Styles */
+.products {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 200
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .division {
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #6d2626;
+  }
+  
+  #women {
+    background-color:rgb(61, 59, 59);
+  }
+  
+  #men {
+    background-color:rgb(61, 59, 59);
+    
+  }
+  
+  #kids {
+    background-color:rgb(61, 59, 59);
+  }
+  #accessories {
+    background-color:rgb(61, 59, 59);
+  }
+  
+  
+  
+    
+  
+
+  
