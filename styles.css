@@ -3,22 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* Header Styles */
+    
+  }
 header {
     background-color: pink;
     color:rgb(109, 9, 72);
     padding: 20px;
+    margin-right:200;  
 }
-
-header h1 {
-         
-       
-        
+header h1 {      
     margin: 0;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -28,7 +23,6 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
-
 nav ul li a {
     color: red;
     text-decoration: none;
@@ -36,80 +30,167 @@ nav ul li a {
 .contact-info {
     display: none;
   }
-  
   .show-info {
     cursor: pointer;
    
     color: red;
   }
-
-/* Hero Section Styles */
 .hero {
     background-image: url("https://t3.ftcdn.net/jpg/02/79/18/54/240_F_279185405_M3nM3kB3nwLud0CvsLEeiN2wAAy4IRtV.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px 0;
-    color: #fff;
-    
-      
+    padding: 150px 0;
+    color: rgb(99, 25, 25);   
+    background-repeat: no-repeat;
+    transition:5s;
+    animation-name:animate ;
+    animation-direction:alternate-reverse ;
+    animation-duration:30s;
 
-    
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite ;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out ;
 }
-    
+@keyframes animate{
+  0%{
+    background-image: url(https://media.gettyimages.com/id/1368512863/photo/clothing-store.jpg?s=612x612&w=0&k=20&c=Vy2chHwf1MabU3AfWnVQPgo3-aj2FnzNuT5LblJOKWM=);  
+  }
+  20%{
+    background-image: url(https://t3.ftcdn.net/jpg/03/57/56/46/240_F_357564668_xKT1iGRZ9qj3TxSfx2MOKBYiwikiUDTI.jpg);
+  }
+  40%{
+    background-image: url(https://t3.ftcdn.net/jpg/02/64/92/28/240_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg);
+  }
+  60%{
+    background-image: url(https://t3.ftcdn.net/jpg/03/11/25/36/240_F_311253631_Gy9m50XZzRczqw098dEBviUJdK0Xh4no.jpg);
+  }
+  80%{
+    background-image: url(https://t3.ftcdn.net/jpg/02/68/02/72/240_F_268027237_5dnxmVzkU0OGFhByf3qlGmpWKJ5Gs0Bo.jpg);
+  }
+  100%{
+    background-image: url(https://img.freepik.com/free-vector/new-collection-banner-template_1361-1325.jpg?size=626&ext=jpg&ga=GA1.1.1264552444.1684862609&semt=ais);
+  }
+}   
 .hero h2 {
     margin-top: 0;
 }
-
-.btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
+.btn{
+  display:inline-block;
+  background-color:rgb(61, 59, 59);
+  color: white;
+  padding: 10px 20px;
+  margin-top:20px;
+  text-decoration: none;
 }
-
-/* Products Section Styles */
+.cart-icon{
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+    top: -50px;
+    right: 110px;
+    bottom: 50px;  
+}
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.cart-items {
+  
+    display: none; 
+}
 .products {
     text-align: center;
     padding: 50px 0;
 }
-
 .product {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 5px;
     text-align: center;
 }
-
 .product img {
     width: 200
 }
 #container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    top:-50px;
+    padding-block: 0px; 
   }
-  
   .division {
     width: 40%;
-    padding: 5px;
+    height:70px;
+    padding: 10px;
     border: 1px solid #6d2626;
+    margin: 0;
+    padding:0;
+     margin-top:-40px;
+  }
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
   }
   
+  .product h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .cart {
+    position: relative; 
+  }
+  
+  .cart img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    float: right;
+  margin-right: 10px;
+  }
+  
+  .cart-count {
+    position: relative;
+    top: -10px;
+    right: 10px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 50%;
+    float: right;
+  margin-right: 10px;
+  }
   #women {
     background-color:rgb(61, 59, 59);
+    text-decoration: none;
+    text-align: center;
   }
-  
   #men {
     background-color:rgb(61, 59, 59);
-    
+    text-decoration: none;
+    text-align: center;
   }
-  
   #kids {
     background-color:rgb(61, 59, 59);
+    text-decoration: none;
+    text-align: center;
   }
   #accessories {
     background-color:rgb(61, 59, 59);
+    text-decoration: none;
+    text-align: center;
   }
   
   

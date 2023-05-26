@@ -1,37 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    
-
-    
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dresskart</title>
     <link rel="stylesheet" href="styles.css">
-    
-
-<script>
-  function toggleContactInfo() {
-    var contactInfo = document.getElementById("contact-info");
-    if (contactInfo.style.display === "none") {
-      contactInfo.style.display = "block";
-    } else {
-      contactInfo.style.display = "none";
-    }
-  }
-</script>
-  
 </head>
 <body>
-  <div id="background-image"></div>
-
-  
+  <div id="background-image"></div> 
 </body>
 </html>
-
 </head>
-
 <body>
     <header>
          <h1 id="header" style= "font-family:Brush Script MT"><b>Dresskart
@@ -46,74 +25,66 @@
                     
                     <p>Email: dresskart@gmail.com</p>
                     <p>Phone: 123-456-7890</p>
-                  </div>
-                     
-                  
+                  </div>        
             </ul>
         </nav>
-    </header>
-    
-      
+      </div>
+          <div class="cart-container">
+            <a href="#" class="cart-icon">
+              <span class="cart-count">0</span>
+              <img src="https://cdn-icons-png.flaticon.com/128/4290/4290854.png"height=50 alt="Cart" />
+            </a>
+          </div>
+    </header> 
     <div id="container">
         <div class="division" id="women">
-            <h4 style="color:white">Women's Wear</h4>
-          <!-- Content for women's wear -->
+           <a href="./womenwear.html"> <h4 style="color:white">Women's Wear</h4></a>
+         
         </div>
         <div class="division" id="men">
-          <h4 style="color:white">Men's Wear</h4>
-          <!-- Content for men's wear -->
+          <a href="./menswear.html"><h4 style="color:white">Men's Wear</h4></a>
         </div>
         <div class="division" id="kids">
-          <h4 style="color:white">Kids' Wear</h4>
-          <!-- Content for kids' wear -->
+          <a href="./kidswear.html"><h4 style="color:white">Kids' Wear</h4></a>
         </div>
         <div class="division" id="accessories">
-            <h4 style="color:white">Accessories</h4>
-            <!-- Content for kids' wear -->
+            <a href="./accessories.html"><h4 style="color:white">Accessories</h4></a>
+            </div>
           </div>
+  </div>    
+       <section class="hero"> 
       </div>
-       <section class="hero">
-        <h2>Welcome to our Clothing Store</h2>
+        <h2>Welcome to our Cloth Store</h2>
         <p>Discover the latest fashion trends</p>
         <a href="#" class="btn">Shop Now</a>
-    </section>
-
-    <section class="products">
-        <h2>Featured Products</h2>
-        <div class="product">
-            <h2>Women's wear</h2>
-            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcStqepCSWp3rFRr4C0q3xUIu080J3Sm1qIjEvIugNknw4oPDF4MAwRMSkgiKHRC3ktNi5aRSMKqGbRMrGa35D467hNJR3q7Nv5bYbJIUjIGIVW5laB5ppsvjYjbitqd2vIJOpMu&usqp=CAc"height=100 alt="Product 1">
-            <h4>Summer Dress</h4>
-            <p>Rs.1,499</p>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="product">
-            <img src="https://m.media-amazon.com/images/I/71rQyi-fUZL._UY879_.jpg" height=100 alt="Product 2">
-            <h4>Digital Printed Maxi Dress</h4>
-            <p>Rs.1,999</p>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="product">
-            <img src="https://m.media-amazon.com/images/I/71dNIIMX1HL._UY879_.jpg"height=100 alt="Product 3">
-            <h4> Georgette Semi Stitched Top</h4>
-            <p>Rs.1,799</p>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQGcEHpmgoKkHZSDODgF5qrCmzXUa4eYhebwh6M_SClAZZhjpBlcOqa7EWxd5Xd3EhORXHrRd8gijsaKw3gU0th8IWuVVDhfMqBAgXNwIDluwV4lcLOGFstjvwXXHZ3iDwsYw&usqp=CAc"height=100 alt="Product 4">
-            <h4>Rimsha Wear</h4>
-            <p>Rs.399</p>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-    </section>
-    
-
+       </section>
     <footer>
         <p>&copy; 2023 Clothing Store. All rights reserved.</p>
-    </footer>
-    
-      
-      
+    </footer>  
+    <script src="script.js"></script>
+    <script>
+      function toggleContactInfo() {
+        var contactInfo = document.getElementById("contact-info");
+        if (contactInfo.style.display === "none") {
+          contactInfo.style.display = "block";
+        } else {
+          contactInfo.style.display = "none";
+        }
+      }
+      function addToCart(itemName,itemPrice) {
+        var cartList = document.getElementById("cartList");
+        var totalPrice = document.getElementById("totalPrice");
+        
+        var li = document.createElement("li");
+        li.textContent = itemName + " - $" + itemPrice;
+        cartList.appendChild(li);
+        totalPrice.textContent = parseInt(totalPrice.textContent) + itemPrice;
+        if (cartList.style.display === "none") {
+          cartList.style.display = "block";
+        } else {
+          cartList.style.display = "none";
+        }
+      }
+    </script>
 </body>
-
 </html>
