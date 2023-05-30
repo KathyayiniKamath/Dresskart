@@ -5,6 +5,14 @@ body {
     padding: 0;
     
   }
+  @media (max-width: 768px) {
+    /* Add your tablet-specific styles here */
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 480px) {
+    /* Add your mobile-specific styles here */
+  }
 header {
     background-color: pink;
     color:rgb(109, 9, 72);
